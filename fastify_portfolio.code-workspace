@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../fastify_portfolio_frontend"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

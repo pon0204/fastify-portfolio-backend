@@ -1,0 +1,5 @@
+{
+  "ext": " *.js",
+  "verbose": true,
+  "exec": "node src/index.js"
+}
