@@ -1,15 +1,24 @@
-import "./models/product.js";
-import database from "./database/index.js";
 import Fastify from "fastify";
-const fastify = Fastify()
 import fastifyCors from "fastify-cors";
+import fastifySwagger from "fastify-swagger";
+import database from "./database/index.js";
+import "./models/product.js";
 import routes from "./plugin/routes.js";
+const fastify = Fastify()
+
 
 fastify.register(fastifyCors), { 
   origin: true,
   methods: ["GET","POST", "DELETE", "PUT", "PATCH"]
 }
+fastify.register(fastifySwagger, {
+  routePrefix: '/docs',
+  openapi: {},
+  exposeRoute: true,
+})
+
 fastify.register(routes)
+
 
 const start = async () => {
   try {
