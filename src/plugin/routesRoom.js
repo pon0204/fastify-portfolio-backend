@@ -17,4 +17,12 @@ export default async function(fastify,opts){
     const roomId = room.uuid
     return reply.send({ roomId });
   })
+
+  fastify.put("/room/search/:id", async (request, reply) => {
+    const { id } = request.params;
+    await Product.update({ ...request.body }, { where: { id } });
+    const room = await Room.findByPk(id);
+    return reply.send({ room });
+  });
+  
 }

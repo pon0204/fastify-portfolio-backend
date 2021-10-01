@@ -25,6 +25,10 @@ const Room = database.define("room", {
   partnerName: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+  chat: {
+    type: Sequelize.STRING,
+    allowNull: false
   }
 });
 
