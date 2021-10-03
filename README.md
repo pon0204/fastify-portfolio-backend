@@ -9,9 +9,6 @@
 ![image](https://one-pay.web-one-park.com/wp-content/uploads/2021/10/React_Redux_App.png)
 
 
-## 動画URL
-https://one-pay.web-one-park.com/wp-content/uploads/2021/10/画面収録-2021-10-01-16.49.18.mov
-
 ## 使用技術
 【バックエンド】 
 
