@@ -18,7 +18,7 @@ Node.js/Fastify/sequelize
 
 React/TypeScript
 
-## 制作時間(現状まで)
+## 制作時間(~2021/9/30)
 フロントエンド 16時間
 バックエンド 3時間
 
